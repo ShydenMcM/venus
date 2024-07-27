@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "django.contrib.humanize",
     "debug_toolbar",
     "landing",
+    "Venus"
 ]
 
 MIDDLEWARE = [
