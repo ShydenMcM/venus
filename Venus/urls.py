@@ -18,14 +18,20 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
-from landing.views import home
+from landing.views import home, page1, page2, page3, page4, final, gift
 from debug_toolbar.toolbar import debug_toolbar_urls
 
 
 urlpatterns = (
     [
         path("admin/", admin.site.urls),
-        path("", home, name="home")
+        path("", home, name="home"),
+        path("page1", page1, name="page1"),
+        path("page2", page2, name="page2"),
+        path("page3", page3, name="page3"),
+        path("page4", page4, name="page4"),
+        path("final", final, name="final"),
+        path("gift", gift, name="gift")
     ]
     + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
     + debug_toolbar_urls()

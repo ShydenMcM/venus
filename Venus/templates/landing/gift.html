@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}
+    | Your Gift
+{% endblock  %}
+
+
+{% block content %}
+
+{% load static %}
+<main role="main">
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading">A Small Gift For You</h1>
+            <img src="{% static 'venus/Gift.jpg' %}" height="700" alt="gift">
+            <p>
+                Happy Birthday! I love you
+            </p>
+            <p>
+                <a href="{% url 'home' %}" class="btn btn-primary my-2">Start again</a>
+            </p>
+        </div>
+    </section>
+</main>
+{% endblock %}

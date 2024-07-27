@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}
+    | Page 1
+{% endblock  %}
+
+
+{% block content %}
+
+{% load static %}
+<main role="main">
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading">Page 1</h1>
+            <img src="{% static 'venus/Snapchat-1817110392.jpg' %}" height="400" alt="photo of Venus">
+            <p>
+                Once upon a time, there was a regular old guy who had plans to visit Korea. But then, all of a sudden, a wild Venus appears into his life and changes everything.
+                <br> She used her black magic to seduce him, and now he belongs to her.
+                <br> She warms his heart in a way he has never felt before.
+            </p>
+            <p>
+                <a href="{% url 'home' %}" class="btn btn-secondary my-2">Back</a> <a href="{% url 'page2' %}" class="btn btn-primary my-2">Page 2</a>
+            </p>
+        </div>
+    </section>
+</main>
+{% endblock %}

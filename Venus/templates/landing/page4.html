@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}
+    | Page 4
+{% endblock  %}
+
+
+{% block content %}
+
+{% load static %}
+<main role="main">
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading">Page 4</h1>
+            <img src="{% static 'venus/mirror.jpg' %}" height="400" alt="mirror photo of Venus">
+            <p>
+                This was a short story. But there's still many more chapters to write.
+            </p>
+            <p>
+                <a href="{% url 'page3' %}" class="btn btn-secondary my-2">Back</a>
+                <a href="{% url 'final' %}" class="btn btn-primary my-2">Read my message to you</a>
+            </p>
+        </div>
+    </section>
+</main>
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}
+    | Epilogue
+{% endblock  %}
+
+
+{% block content %}
+
+{% load static %}
+<main role="main">
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading">Happy Birthday!</h1>
+            <img src="{% static 'venus/Snapchat-578229281.jpg' %}" height="400" alt="photo of Venus">
+            <img src="{% static 'venus/Snapchat-1179989743.jpg' %}" height="400" alt="photo of Venus">
+            <img src="{% static 'venus/Snapchat-1333182895.jpg' %}" height="400" alt="photo of Venus">
+            <p>
+                I really wish I could have had more time to work on this. But I hope you like it anyway.
+                <br> You're my world, the light in my darkness, my warmth, my comfort, my everything.
+                <br> Nothing makes me happier in this life other than knowing you're in it. I am so so so lucky to have you.
+                <br> Thank you for being born, thank you for loving me.
+                <br> You're not a teen anymore. You're <b>20!</b> I guess that officially makes you an adult right?
+                <br> But you'll always be my baby.
+            </p>
+            <p>
+                It's your birthday, but not only that, you start your new university course <b>TODAY</b>. You have no idea how proud I am of you!
+                <br> Reach out to me if you ever need anything, any help or just to rant about your day. I give myself to you.
+                <br> I can't wait to show you off to the world. To be able to take photos together and make our own memories together.
+                <br> This is your first birthday I have been a part of. There's so so so many more to come, and I am very excited to be in them
+                <br> It feels like my life is finally starting. I am 36, just surviving. But now I am <b>living</b>. I have ambition again. A reason to live.
+            </p>
+            <p>
+            And I owe it all to <b>YOU!</b>
+            </p>
+            <p>
+            <b>I LOVE YOU MORE YOU'LL EVER KNOW!</b>
+            </p>
+            <p>
+                I can't be there to give you a gift in person, but click the button below and see what I have sent you. I hope you get something you really want with it.
+                <br> <a href="{% url 'gift' %}" class="btn btn-primary my-2">Open Gift</a>
+            </p>
+        </div>
+    </section>
+</main>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}
+    | Page 2
+{% endblock  %}
+
+
+{% block content %}
+
+{% load static %}
+<main role="main">
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading">Page 2</h1>
+            <img src="{% static 'venus/Snapchat-1050294607.jpg' %}" height="400" alt="photo of Venus">
+            <p>
+                They officially became girlfriend & boyfriend on the 15th June 2024. But to him, it feels like they've been together forever!
+                <br>He's the happiest he has ever been and feels truly blessed! Already they are planning their future together.
+            </p>
+            <p>
+                <a href="{% url 'page1' %}" class="btn btn-secondary my-2">Back</a>
+                <a href="{% url 'page3' %}" class="btn btn-primary my-2">Page 3</a>
+            </p>
+        </div>
+    </section>
+</main>
+{% endblock %}
