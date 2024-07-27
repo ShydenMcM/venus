@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "2hm&bx(h5eq*na)$i0hp01=e(3f6@dyt+_&z@b&drv#zgt_a!9"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['lazy-potato.tplinkdns.com']
+ALLOWED_HOSTS = ['shyden.tplinkdns.com', '172.28.173.109']
 
 
 # Application definition
