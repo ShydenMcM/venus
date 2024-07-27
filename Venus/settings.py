@@ -26,7 +26,7 @@ SECRET_KEY = "2hm&bx(h5eq*na)$i0hp01=e(3f6@dyt+_&z@b&drv#zgt_a!9"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['shyden.tplinkdns.com', '172.28.173.109']
+ALLOWED_HOSTS = ['venusmyworld.tplinkdns.com', '172.28.173.109']
 
 
 # Application definition
